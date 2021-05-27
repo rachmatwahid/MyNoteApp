@@ -3,6 +3,7 @@ package com.rachmatwahid.mynoteapp.db
 import androidx.lifecycle.LiveData
 import androidx.room.*
 
+@Dao
 interface NoteDao {
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)

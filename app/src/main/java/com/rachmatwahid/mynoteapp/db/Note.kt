@@ -7,7 +7,6 @@ import androidx.room.PrimaryKey
 import kotlinx.parcelize.Parcelize
 
 @Entity
-@Parcelize
 class Note(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
@@ -21,4 +20,4 @@ class Note(
 
     @ColumnInfo(name = "date")
     var date: String? = null
-) : Parcelable
+)
